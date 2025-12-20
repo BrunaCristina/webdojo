@@ -1,0 +1,52 @@
+{        
+  "personal": {
+    "name": "Bruna Cristina",
+    "email": "bruna@gmail.com",
+    "phone": "31 92244-5577",
+    "consultancyType": "Individual",
+    "personType": "cpf",
+    "document": "91777887020",
+    "discoveryChannels": [
+      "Instagram",
+      "YouTube",
+      "LinkedIn",
+      "Udemy",
+      "Indicação de Amigo"
+    ],
+    "file": "./cypress/fixtures/CheckListPerformance.pdf",
+    "description": "Lorem ipsum dolor sit amet",
+    "techs": [
+      "Cypress",
+      "Selenium",
+      "Playwright",
+      "Robot Framework"
+    ],
+    "terms": true
+  },
+
+
+  "company": {
+    "name": "Bruna Cristina",
+    "email": "bruna@gmail.com",
+    "phone": "31 92244-5577",
+    "consultancyType": "In Company",
+    "personType": "cnpj",
+    "document": "90776835000120",
+    "discoveryChannels": [
+      "Instagram",
+      "YouTube",
+      "LinkedIn",
+      "Udemy",
+      "Indicação de Amigo"
+    ],
+    "file": "./cypress/fixtures/CheckListPerformance.pdf",
+    "description": "Lorem ipsum dolor sit amet",
+    "techs": [
+      "Cypress",
+      "Selenium",
+      "Playwright",
+      "Robot Framework"
+    ],
+    "terms": true
+  }
+}
