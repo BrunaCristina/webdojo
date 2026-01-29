@@ -2,10 +2,9 @@ import {dataHoje} from "../support/actions/utils"
 
 describe('Login', () => {
 
-   it.only('Deve logar com sucesso', () => {
+     it('Deve logar com sucesso', () => {
 
     cy.start()
-    cy.viewport('iphone-xr')
     cy.submitLoginForm('papito@webdojo.com', 'katana123') // Chamada Função geral em Commands.js
 
     // Para confirmar que entrou e fez o Login, adotou-se a estratégia de ler algo na página:

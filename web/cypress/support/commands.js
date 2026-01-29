@@ -26,11 +26,18 @@
 
 import 'cypress-real-events'
 import './actions/consultancy.actions'
-import {dataHoje} from "../support/actions/utils"   // importando a função que retorna a data atual
+import { dataHoje } from "../support/actions/utils"   // importando a função que retorna a data atual
 
 Cypress.Commands.add('start', () => {
     cy.visit('')    // Endereço da aplicação foi configurado de modo Global em cypress.config.js
 
+})
+
+Cypress.Commands.add('goToSignup', () => {
+    cy.start()
+    cy.get('a[href="/register"]').click()   // Clicando no botão Cadastre-se
+    cy.contains('h2', 'Crie sua conta')
+        .should('be.visible')
 })
 
 Cypress.Commands.add('submitLoginForm', (email, senha) => {
@@ -54,14 +61,14 @@ Cypress.Commands.add('goTo', (buttonName, pageTitle) => { // Para ir para qualqu
 
 
 // Helpers
-Cypress.Commands.add('login', (ui = false)=> {
-        
-    if(ui === true){     // Faz Login pela Interface Gráfica
+Cypress.Commands.add('login', (ui = false) => {
+
+    if (ui === true) {     // Faz Login pela Interface Gráfica
         cy.start()
         cy.submitLoginForm('papito@webdojo.com', 'katana123')
-    }else{  // Faz Login via Cookie e LocalStorage
+    } else {  // Faz Login via Cookie e LocalStorage
 
-          //Armazenando itens no cookie e no LocalStorage para acelerar o processo de Login (sem precisar de ir pela interface)
+        //Armazenando itens no cookie e no LocalStorage para acelerar o processo de Login (sem precisar de ir pela interface)
         const token = 'e1033d63a53fe66c0fd3451c7fd8f617'
         const loginDate = dataHoje()
 

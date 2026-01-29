@@ -1,6 +1,6 @@
 # 📌 Projeto de Testes Automatizados – Webdojo (Cypress)
 
-Este repositório contém os **testes automatizados da aplicação Webdojo**, desenvolvidos com **Cypress**, visando garantir a qualidade, estabilidade e performance da aplicação Web.
+Este repositório contém os **testes automatizados da aplicação Webdojo**, desenvolvidos com **Cypress**, visando garantir a qualidade, estabilidade e performance da aplicação Web. Possui muitos comentários pois foi feito com intuito de estudo.
 
 ---
 
